@@ -41,14 +41,18 @@
 
 <%= form_with model: @book, url: '/books', method: :post  do |f| %>
 
-<label for="book_title">Title</label>
+<div class = "field">
+ <label for="book_title">Title</label>
   <%= f.text_field :title %>
+  </div>
   
-<label for="book_body">Body</label>	
+<div class = "field">
+ <label for="book_body">Body</label>	
   <%= f.text_area :body %>
+  </div>
   
-<input type="submit" name="commit" value="Create Book" data-disable-with="Create Book">
- 
+ <input class="button" type="submit" name="commit" value="Create Book" data-disable-with="Create Book">
+
 <% end %>
 
 　
